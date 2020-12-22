@@ -19,6 +19,7 @@ gem 'jquery-rails'
 #bootstrap addition new
 gem 'twitter-bootstrap-rails'
 gem 'therubyracer'
+gem 'faker'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
