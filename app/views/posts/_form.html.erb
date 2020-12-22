@@ -11,9 +11,9 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.select(:name, Author.order("first_name ASC").collect{|author| [author.first_name]}, {prompt:"Select author"}, class:"form-control", id:"id") %>
   </div>
 
   <div class="field">
