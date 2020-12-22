@@ -13,7 +13,7 @@
 
   <div class="form-group">
     <%= form.label :name %>
-    <%= form.select(:name, Author.order("first_name ASC").collect{|author| [author.first_name]}, {prompt:"Select author"}, class:"form-control", id:"id") %>
+    <%= form.select(:name, Author.order("first_name ASC").collect{|author| [author.first_name + " " + author.last_name]}, {prompt:"Select author"}, class:"form-control", id:"id") %>
   </div>
 
   <div class="field">
